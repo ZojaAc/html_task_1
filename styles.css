@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.box {
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+  background-color: #99ff99;
+  border: 2px solid #e0e0d1;
+}
+
+.box:nth-child(3n) {
+  background-color: #ffccff;
+}
+
+.box:first-child, .box:last-child {
+  background-color: #cc99ff;
+}
+
+.box:first-child {
+  border: 2px solid #9900cc;
+}
+
+.box:last-child:hover {
+  margin-top: 20px;
+}
